@@ -1,6 +1,21 @@
 import { createRouter, createWebHistory } from "vue-router";
+import Auth from "../pages/Auth.vue";
+import Dashboard from "../pages/Dashboard.vue";
 
-const routes = [];
+
+const routes = [
+  {
+    path: "/auth",
+    name: "Auth",
+    component: Auth,
+  },
+
+  {
+    path: "/",
+    name: "Dashboard",
+    component: Dashboard,
+  }
+];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_APP_ENV),
