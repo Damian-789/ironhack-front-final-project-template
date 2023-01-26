@@ -1,11 +1,9 @@
 <template>
 <LogOut/>
-<NewTastk/>
-<PendingTasks/>
+<NewTastk @getReloadFunction="getReloadFunction"/>
+<TaskList :msg="msg"/>
 
-    
-    <!-- Input para crear tarea -->
-    <!-- Lista de tareas -->
+
     
 </template>
 
@@ -13,7 +11,17 @@
 import { ref } from "vue";
 import LogOut from "../components/LogoutBoton.vue";
 import NewTastk from "../components/NewTask.vue";
-import PendingTasks from "../components/PendingTasks.vue";
+import TaskList from "../components/TaskList.vue";
+
+const msg = ref(false);
+
+
+function getReloadFunction(){
+    console.log("probando recepcion de funcion getAllTasks")
+    msg.value = true;
+}
+
+
 
 
 </script>
