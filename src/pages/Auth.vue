@@ -6,13 +6,7 @@
   <h1 class="ml-96 text-3xl mt-5 text-gray-700">
     Use 2Doo, the best to-do list application.
   </h1>
-  <h1 class="ml-96 text-3xl mt-1 text-gray-700">
-    Organize your work. Organize your life.
-  </h1>
-
-  <h2 class="ml-96 text-2xl mt-4 font-bold text-gray-700">
-    Login or register now!
-  </h2>
+  
 
   <Login v-if="login" />
   <Register v-else="register" />

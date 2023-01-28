@@ -37,7 +37,7 @@ async function createTasks() {
     const title = newTask.value;*/
     newTask.value = ""
     
-    //location.reload()
+    location.reload()
 
      
 }
