@@ -9,7 +9,7 @@
                 <button class="bg-teal-800 p-2 mr-3 w-16" @click="remove(task)">Delete</button>
                 <button class=" bg-teal-800 p-2 mr-3 w-16" @click="edit(task)" >Edit</button>
                 
-                <button class=" bg-green-600 p-2 mr-3 w-24"   @click="complete(task)" v-if="task.is_complete">Commplete</button>
+                <button class=" bg-green-600 p-2 mr-3 w-24"   @click="complete(task)" v-if="task.is_complete">Complete</button>
                 <button class=" bg-red-600 p-2 mr-3 w-24" @click="complete(task)" v-else>Incomplete</button>
                 <!--<input type="checkbox" id="activar"> 
                 <label for="activar"> Complete</label> -->
@@ -35,32 +35,6 @@ const tasks = ref([])
 
 
 
-/*
-const status = ref("")
-const backgroundColor = ref()
-
-watch(task.is_complete,(newStatus) =>{
-    if (newStatus = true ) {
-        status.value = "Complete";
-        backgroundColor.value = "green-background"
-    }else{
-        status.value = "Pending";
-        backgroundColor.value = "red-background"
-    }
-})*/
-
-//const props = defineProps(["msg"])
-/*const props = defineProps({
-    type: Boolean,
-    default: true,
-});*/
-
-/*watch(props, (newProps) => {
-    console.log(newProps.msg)
-   if(newProps.msg === true) {
-    getAllTasks()
-   }
-})*/
 
 
 async function getAllTasks() {
